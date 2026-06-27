@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Roland Mercer",
+    "relationship_to_victim": "Vivienne's talent manager of 6 years. Co-signed her Seraphine Beauty sponsorship contract. Currently negotiating a separate deal with Seraphine that would effectively replace Vivienne with a younger creator.",
+    "motive": "Vivienne discovered that Roland had secretly renegotiated her Seraphine Beauty contract, removing her exclusivity clause and pocketing a $40,000 facilitation fee. She was preparing to expose him publicly and terminate their management agreement, which would have voided his 20% commission on all her existing deals. The crystal vial (EVD-002) bears his initials 'R.M.'",
+    "alibi": "Claims he drove directly home after leaving The Lantern Bar at 8:47 PM and was asleep by 10:00 PM. States he lives alone and has no one to corroborate this. Denies ever owning or handling a crystal vial. Has a size 11 shoe size.",
+    "known_lies_or_inconsistencies": "Roland told detectives he 'barely raised his voice' during the 8:15 PM argument, contradicting bartender Patrice Okonkwo's account of a clearly audible confrontation and a shattering glass. He also failed to mention Vivienne's accusation about the Seraphine contract in his initial statement."
+  },
+  {
+    "name": "Oliver Ashworth",
+    "relationship_to_victim": "Vivienne's estranged husband of 3 years. Co-founder of Ashworth PR, the agency that originally launched Vivienne's brand. Divorce proceedings have been ongoing for 8 months.",
+    "motive": "Vivienne had obtained internal Ashworth PR emails showing the firm had used her likeness and content in client pitches without her consent after their separation — a direct violation of her IP rights. She intended to use this in the divorce proceedings and potentially file a separate civil suit. The typed note (EVD-007) on Ashworth PR letterhead and his pocket watch found on her body (EVD-005) both implicate him.",
+    "alibi": "Claims he left the office at 7:30 PM (confirmed by security guard Marcus Webb), drove to dinner alone at Pellegrino's restaurant on the east side, and returned to the office at 11:05 PM to retrieve a file. The restaurant has no record of a reservation or credit card transaction in his name for that evening. The gap between 7:30 PM and 11:05 PM is entirely unaccounted for.",
+    "known_lies_or_inconsistencies": "Oliver initially told detectives he had not seen or spoken to Vivienne in 'over two weeks.' Phone records show a 3-minute call from Vivienne's phone to Oliver's number at 10:31 PM — just after Thomas Hale spotted her on the bridge. Oliver has no explanation for this call."
+  },
+  {
+    "name": "Danielle Reeves",
+    "relationship_to_victim": "Vivienne's closest friend and fellow beauty influencer. Often featured in Vivienne's content. Recently lost a major brand deal to Vivienne that Danielle believed she had secured first.",
+    "motive": "Danielle had been offered the lead Seraphine Beauty ambassador contract before Vivienne entered the picture. Roland Mercer switched the offer to Vivienne without explanation, costing Danielle an estimated $85,000 in annual revenue. Text messages recovered from Vivienne's phone show a heated exchange two days before the death in which Danielle wrote: 'You knew I was up for that and you went behind my back. I will never forgive you for this.' The lipstick smear on Vivienne's cheek (EVD-008) matches Danielle's known shade.",
+    "alibi": "Claims she walked Vivienne 'to the corner of Elm and Bridge Street' at around 10:10 PM, then took a rideshare home. Rideshare records show a pickup at 10:22 PM from a location 4 blocks past Harwick Bridge — not on the route she described. She was at the bridge, not 'halfway home.'",
+    "known_lies_or_inconsistencies": "Danielle told police she and Vivienne 'parted on good terms' and that 'everything was fine between us.' This contradicts the recovered text messages. She also claims she 'heard nothing unusual' when she left Vivienne, yet her rideshare pickup was 4 blocks past the bridge — meaning she walked over it after allegedly parting from Vivienne at Elm Street."
+  },
+  {
+    "name": "Patrice Okonkwo",
+    "relationship_to_victim": "Bartender at The Lantern Bar. Has served Vivienne regularly for two years. Recently discovered that Vivienne's negative review of The Lantern Bar (posted anonymously) was responsible for the bar losing a significant corporate catering contract.",
+    "motive": "Minor compared to other suspects. Patrice had confronted bar owner about the anonymous review; a tech-savvy coworker had traced the review's metadata back to Vivienne's home IP. Patrice was personally blamed by management for not managing 'difficult regulars.' More significantly, Patrice may have overheard the full scope of the argument at 8:15 PM and could be a material witness rather than a suspect.",
+    "alibi": "Was on shift at The Lantern Bar until 1:00 AM closing, confirmed by two other staff members and the bar's own security footage. Considered low-probability suspect. Included due to potential knowledge of the argument's full content.",
+    "known_lies_or_inconsistencies": "Patrice initially claimed to detectives that Roland Mercer and Vivienne were 'having a calm discussion' when in fact other patrons confirmed a clearly audible argument. Patrice later amended this statement. Possible intimidation by Roland Mercer, who is a frequent high-tipping customer."
+  }
+]

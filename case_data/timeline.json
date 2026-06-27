@@ -1,0 +1,67 @@
+[
+  {
+    "time": "6:00 PM",
+    "event": "Victim Vivienne Ashworth posts her final Instagram story — a close-up of a glass of red wine with the caption 'Loose ends, loose lips.' She is at home in her Harwick Heights apartment.",
+    "witnesses_present": ["Danielle Reeves (confirmed via DM exchange at 6:03 PM)"]
+  },
+  {
+    "time": "7:30 PM",
+    "event": "Oliver Ashworth is seen leaving the Ashworth PR office on Caldwell Street by the building's night security guard, Marcus Webb. Oliver is carrying a burgundy cashmere scarf and speaking on his phone in a raised voice.",
+    "witnesses_present": ["Marcus Webb (security guard)"]
+  },
+  {
+    "time": "8:00 PM",
+    "event": "Vivienne Ashworth arrives at The Lantern Bar on Meridian Avenue. She meets with her manager, Roland Mercer, in a private booth. Bartender confirms the meeting lasted approximately 45 minutes.",
+    "witnesses_present": ["Roland Mercer", "Patrice Okonkwo (bartender)"]
+  },
+  {
+    "time": "8:15 PM",
+    "event": "A loud argument breaks out in the private booth. Patrice Okonkwo hears Vivienne say clearly, 'The Seraphine deal was mine and you know it.' A glass shatters against the booth divider wall.",
+    "witnesses_present": ["Patrice Okonkwo (bartender)", "unnamed bar patron near booth"]
+  },
+  {
+    "time": "8:47 PM",
+    "event": "Roland Mercer leaves The Lantern Bar alone through the side exit. Vivienne remains seated at the booth, visibly upset, ordering another glass of wine.",
+    "witnesses_present": ["Patrice Okonkwo (bartender)"]
+  },
+  {
+    "time": "9:15 PM",
+    "event": "Danielle Reeves arrives at The Lantern Bar and joins Vivienne at the booth. Security camera footage confirms Danielle entered through the front door at 9:16 PM.",
+    "witnesses_present": ["Patrice Okonkwo (bartender)", "security camera footage"]
+  },
+  {
+    "time": "10:00 PM",
+    "event": "Vivienne and Danielle leave The Lantern Bar together. Danielle later claims she walked Vivienne 'halfway home.' Harwick Bridge is not on the direct route from The Lantern Bar to Vivienne's apartment — it is a 6-minute detour.",
+    "witnesses_present": ["Patrice Okonkwo (bartender — confirms they left together)"]
+  },
+  {
+    "time": "10:30 PM",
+    "event": "A jogger, Thomas Hale, passes over Harwick Bridge heading south. He notices a woman in a long coat standing at the east railing alone, looking at her phone. He does not stop. He later identifies the woman's coat as matching the victim's dark green wool coat.",
+    "witnesses_present": ["Thomas Hale (jogger)"]
+  },
+  {
+    "time": "10:47 PM",
+    "event": "Final activity recorded on Vivienne Ashworth's phone — the unsent draft text to 'D.R.' is created (Evidence EVD-001). No call or message is received from 'D.R.' in response.",
+    "witnesses_present": []
+  },
+  {
+    "time": "10:52 PM",
+    "event": "The silver pocket watch found on the victim stops at this exact time (Evidence EVD-005). Presumed time of death based on coroner's initial assessment and physical evidence.",
+    "witnesses_present": []
+  },
+  {
+    "time": "11:05 PM",
+    "event": "Oliver Ashworth uses his keycard to re-enter the Ashworth PR office building. Security log confirms entry. He claims he returned to retrieve a forgotten file.",
+    "witnesses_present": ["Marcus Webb (security guard — keycard log)"]
+  },
+  {
+    "time": "5:58 AM",
+    "event": "Early morning cyclist Brenda Carr discovers Vivienne Ashworth's body on the east side of Harwick Bridge. The victim is lying face-up, partially frozen to the bridge deck, with the pocket watch in her coat pocket. Brenda calls 911 at 6:01 AM.",
+    "witnesses_present": ["Brenda Carr (cyclist)"]
+  },
+  {
+    "time": "6:40 AM",
+    "event": "Detective unit arrives and secures the scene. Boot print cast taken (Evidence EVD-003). Vial recovered from storm drain (Evidence EVD-002). Typed note found under body (Evidence EVD-007).",
+    "witnesses_present": ["Detective Lara Hoang", "Forensic Officer Pete Solis"]
+  }
+]

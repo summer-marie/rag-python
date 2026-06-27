@@ -1,0 +1,50 @@
+[
+  {
+    "id": "EVD-001",
+    "item_name": "Cracked rose-gold iPhone 14 Pro",
+    "location_found": "East railing of Harwick Bridge, 3 feet from the victim's left hand",
+    "description": "Screen shattered, last activity timestamp 10:47 PM. A draft text message to contact 'D.R.' reads: 'I know what you did with the Seraphine contract. Meet me at the bridge at 10:30 or I send this to everyone.' Phone was still powered on when discovered."
+  },
+  {
+    "id": "EVD-002",
+    "item_name": "Crystal poison vial (empty)",
+    "location_found": "Inside the storm drain 18 inches below the bridge deck, directly beneath the victim",
+    "description": "Hexagonal crystal vial, approximately 4cm tall, stopper missing. Faint residue of a clear liquid inside. Lab analysis pending. The vial is engraved with the initials 'R.M.' on the base. No fingerprints recovered — wiped clean."
+  },
+  {
+    "id": "EVD-003",
+    "item_name": "Single muddy boot print",
+    "location_found": "North approach footpath to Harwick Bridge, 12 feet from the bridge entrance",
+    "description": "Left boot, size 11 men's, deep tread consistent with a Timberland Pro Boondock work boot. Partial tread fill with blue-grey clay mud specific to the Harwick Reservoir embankment, not naturally occurring near the bridge. Cast taken at 6:40 AM."
+  },
+  {
+    "id": "EVD-004",
+    "item_name": "Torn burgundy cashmere scarf fragment",
+    "location_found": "Snagged on a bolt head on the east railing, 2 feet above the victim's position",
+    "description": "Approximately 8cm x 14cm fragment of high-end cashmere, label identified as 'Maison Clerval — Paris.' Thread pattern consistent with a scarf gifted in a luxury PR package sent exclusively to Vivienne Ashworth's sponsor contacts in November. One edge is cleanly cut; the other is a fresh tear."
+  },
+  {
+    "id": "EVD-005",
+    "item_name": "Silver pocket watch (stopped)",
+    "location_found": "Victim's right coat pocket",
+    "description": "Antique silver pocket watch, engraved on the back: 'To Oliver, with all my love — E.A.' The hands are stopped at 10:52 PM. The watch does not belong to the victim. Chain is snapped, suggesting it was placed in her pocket after a struggle. Watch has been identified as belonging to Oliver Ashworth, the victim's estranged husband."
+  },
+  {
+    "id": "EVD-006",
+    "item_name": "Overturned glass of red wine",
+    "location_found": "Near the east bench on the bridge deck, 4 feet from the victim",
+    "description": "A 250ml stemless wine glass, shattered into three large pieces. A dark red wine residue is present on the concrete around it. The break pattern is consistent with the glass being knocked off a flat surface at force, not dropped. Faint lip-gloss transfer on the rim — shade identified as 'Seraphine Beauty — Rouge Noir No. 7', the victim's sponsor brand."
+  },
+  {
+    "id": "EVD-007",
+    "item_name": "Typed note on Ashworth PR letterhead",
+    "location_found": "Tucked beneath the victim's body",
+    "description": "A single folded sheet of Ashworth PR firm letterhead reading: 'You signed the NDA. You will not destroy what I built.' No handwriting — laser printed. The Ashworth PR firm is co-owned by the victim's estranged husband, Oliver Ashworth. Forensics confirmed the paper was placed under the body post-mortem, as there is no blood or moisture transfer consistent with the body lying on it."
+  },
+  {
+    "id": "EVD-008",
+    "item_name": "Partial lipstick smear on victim's left cheek",
+    "location_found": "On the victim's face",
+    "description": "A smear of lipstick inconsistent with the victim's own gloss. Color is a deep plum, identified as 'MAC Cosmetics — Rebel.' This shade was publicly documented in a haul video posted by Danielle Reeves three weeks prior. The smear pattern is consistent with a hurried cheek-kiss or a hand pressed to the face during a struggle."
+  }
+]
