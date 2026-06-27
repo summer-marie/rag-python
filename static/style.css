@@ -1,0 +1,319 @@
+/* ============================================================
+   NYPD CASE FILE RETRIEVAL SYSTEM v2.1
+   90s CRT detective terminal aesthetic
+   ============================================================ */
+
+:root {
+  --bg: #050505;
+  --phosphor: #33ff33;
+  --phosphor-bright: #aaffaa;
+  --phosphor-dim: #1c7a1c;
+  --amber: #ffb000;
+  --amber-dim: #7a5500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--phosphor);
+  font-family: "VT323", "Courier New", Courier, monospace;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+/* ===== CRT monitor housing + curvature ===== */
+.crt {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at 50% 50%, #061a06 0%, var(--bg) 70%);
+}
+
+.crt__bezel {
+  width: 100%;
+  max-width: 980px;
+  padding: 28px;
+  border-radius: 26px;
+  background: #0c0c0c;
+  border: 2px solid #1a1a1a;
+  box-shadow:
+    0 0 0 6px #050505,
+    0 0 60px rgba(51, 255, 51, 0.18),
+    inset 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.screen {
+  position: relative;
+  padding: 30px 34px;
+  border-radius: 22px / 16px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0 120px rgba(0, 0, 0, 0.85),
+    inset 0 0 40px rgba(51, 255, 51, 0.12);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(51, 255, 51, 0.05), transparent 60%),
+    var(--bg);
+}
+
+/* scanline overlay */
+.scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.35) 3px,
+    rgba(0, 0, 0, 0.35) 4px
+  );
+}
+
+/* slow flicker + vignette */
+.flicker {
+  position: absolute;
+  inset: 0;
+  z-index: 31;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 55%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.92; }
+  50% { opacity: 1; }
+  100% { opacity: 0.96; }
+}
+
+/* ===== Terminal content ===== */
+.terminal {
+  position: relative;
+  z-index: 5;
+  text-shadow:
+    0 0 4px rgba(51, 255, 51, 0.8),
+    0 0 12px rgba(51, 255, 51, 0.35);
+}
+
+.terminal__header {
+  text-align: center;
+  border-bottom: 1px dashed var(--phosphor-dim);
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.ascii-title {
+  color: var(--phosphor-bright);
+  font-size: 11px;
+  line-height: 1.05;
+  margin: 0 auto;
+  display: inline-block;
+  text-shadow: 0 0 8px var(--phosphor);
+}
+
+.system-title {
+  font-size: 30px;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  color: var(--amber);
+  text-shadow:
+    0 0 6px rgba(255, 176, 0, 0.9),
+    0 0 16px rgba(255, 176, 0, 0.4);
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--phosphor-dim);
+  margin-top: 6px;
+}
+
+.statusbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: var(--phosphor-bright);
+}
+
+/* ===== Query panel ===== */
+.query-panel {
+  margin-bottom: 18px;
+}
+
+.prompt-label {
+  display: block;
+  font-size: 19px;
+  color: var(--amber);
+  margin-bottom: 6px;
+  text-shadow: 0 0 6px rgba(255, 176, 0, 0.7);
+}
+
+.query-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(51, 255, 51, 0.04);
+  border: 1px solid var(--phosphor-dim);
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: inset 0 0 18px rgba(51, 255, 51, 0.08);
+}
+
+.prompt-glyph {
+  color: var(--phosphor-bright);
+  font-size: 22px;
+}
+
+#query-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--phosphor-bright);
+  font-family: inherit;
+  font-size: 21px;
+  text-shadow: 0 0 5px var(--phosphor);
+  caret-color: var(--phosphor);
+}
+
+#query-input::placeholder {
+  color: var(--phosphor-dim);
+}
+
+#ask-btn {
+  background: transparent;
+  border: 1px solid var(--amber);
+  color: var(--amber);
+  font-family: inherit;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  cursor: pointer;
+  text-shadow: 0 0 6px rgba(255, 176, 0, 0.7);
+  transition: all 0.12s ease;
+}
+
+#ask-btn:hover:not(:disabled) {
+  background: rgba(255, 176, 0, 0.15);
+  box-shadow: 0 0 12px rgba(255, 176, 0, 0.4);
+}
+
+#ask-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+#ask-btn:disabled {
+  cursor: progress;
+  color: var(--amber-dim);
+  border-color: var(--amber-dim);
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--phosphor-dim);
+  margin-top: 6px;
+}
+
+/* ===== Panels ===== */
+.panel-title {
+  font-size: 18px;
+  color: var(--amber);
+  margin-bottom: 6px;
+  text-shadow: 0 0 6px rgba(255, 176, 0, 0.6);
+}
+
+.sources-panel {
+  margin-bottom: 18px;
+}
+
+.sources-list {
+  list-style: none;
+  font-size: 18px;
+  min-height: 24px;
+}
+
+.sources-list li {
+  padding: 2px 0;
+  transition: opacity 0.3s ease;
+}
+
+.sources-list__idle {
+  color: var(--phosphor-dim);
+}
+
+.match-pct {
+  color: var(--amber);
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+/* ===== Output terminal ===== */
+.output-panel {
+  margin-bottom: 14px;
+}
+
+.output-box {
+  min-height: 140px;
+  padding: 14px 16px;
+  border: 1px solid var(--phosphor-dim);
+  border-radius: 4px;
+  background: rgba(51, 255, 51, 0.03);
+  box-shadow: inset 0 0 20px rgba(51, 255, 51, 0.06);
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--phosphor-bright);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--phosphor);
+  animation: blink 1.05s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% { opacity: 1; }
+  50.01%,
+  100% { opacity: 0; }
+}
+
+/* ===== Footer ===== */
+.terminal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px dashed var(--phosphor-dim);
+  padding-top: 12px;
+  font-size: 14px;
+  color: var(--phosphor-dim);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 720px) {
+  body { font-size: 17px; }
+  .crt__bezel { padding: 16px; }
+  .screen { padding: 18px 16px; border-radius: 16px / 12px; }
+  .ascii-title { font-size: 7px; }
+  .system-title { font-size: 22px; }
+  .query-row { flex-wrap: wrap; }
+  #ask-btn { width: 100%; }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYPD CASE FILE RETRIEVAL SYSTEM v2.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- CRT housing + screen curvature -->
+  <div class="crt">
+    <div class="crt__bezel">
+      <div class="screen">
+        <div class="scanlines"></div>
+        <div class="flicker"></div>
+
+        <main class="terminal">
+          <header class="terminal__header">
+            <pre class="ascii-title">
+███╗   ██╗██████╗ ███████╗██╗      ██████╗  ██████╗ ██╗   ██╗
+████╗  ██║██╔══██╗██╔════╝██║     ██╔═══██╗██╔═══██╗╚██╗ ██╔╝
+██╔██╗ ██║██║  ██║█████╗  ██║     ██║   ██║██║   ██║ ╚████╔╝
+██║╚██╗██║██║  ██║██╔══╝  ██║     ██║   ██║██║   ██║  ╚██╔╝
+██║ ╚████║██████╔╝███████╗███████╗╚██████╔╝╚██████╔╝   ██║
+╚═╝  ╚═══╝╚═════╝ ╚══════╝╚══════╝ ╚═════╝  ╚═════╝    ╚═╝
+        </pre>
+            <h1 class="system-title">NYPD CASE FILE RETRIEVAL SYSTEM v2.1</h1>
+            <p class="subtitle">// THE DEATH OF VIVIENNE ASHWORTH &mdash; HARWICK BRIDGE HOMICIDE //</p>
+            <div class="statusbar">
+              <span id="status-clock">SYS-TIME 00:00:00</span>
+              <span>SECURITY CLEARANCE: DETECTIVE</span>
+              <span id="status-db">DB STATUS: ONLINE</span>
+            </div>
+          </header>
+
+          <section class="query-panel">
+            <label class="prompt-label" for="query-input">&gt; ENTER QUERY:</label>
+            <div class="query-row">
+              <span class="prompt-glyph">&gt;</span>
+              <input
+                id="query-input"
+                type="text"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="interrogate the case files..."
+                value="What was found in the storm drain beneath the bridge?"
+              />
+              <button id="ask-btn" type="button">EXECUTE</button>
+            </div>
+            <p class="hint">[ENTER] to transmit query &middot; system answers ONLY from retrieved case files</p>
+          </section>
+
+          <section class="sources-panel">
+            <div class="panel-title">&gt; CASE FILES ACCESSED:</div>
+            <ul id="sources-list" class="sources-list">
+              <li class="sources-list__idle">AWAITING QUERY...</li>
+            </ul>
+          </section>
+
+          <section class="output-panel">
+            <div class="panel-title">&gt; DETECTIVE RESPONSE:</div>
+            <div id="output" class="output-box">
+              <span id="typed-text"></span><span id="cursor" class="cursor">&#9608;</span>
+            </div>
+          </section>
+
+          <footer class="terminal__footer">
+            <span>// NYPD RETRIEVAL SYSTEM // ALL QUERIES LOGGED //</span>
+            <span>UNAUTHORIZED ACCESS IS A CLASS-E FELONY</span>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
